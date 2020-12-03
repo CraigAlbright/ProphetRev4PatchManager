@@ -170,7 +170,7 @@ namespace ProphetRev4sSysexHelper
             Rev4PatchParameters.Add(70, PitchWheelRange);
             RetriggerAndUnisonAssign = new ContinuousController { MaximumValue = 3, MinimumValue = 0, Number = 71, ParameterName = "RETRIGGER AND UNISON ASSIGN", ParameterValue = 0 };
             Rev4PatchParameters.Add(71, RetriggerAndUnisonAssign);
-            Cutoff = new ContinuousController { MaximumValue = 120, MinimumValue = 0, Number = 73, ParameterName = "CUTOFF", ParameterValue = 100 };
+            Cutoff = new ContinuousController { MaximumValue = 120, MinimumValue = 0, Number = 73, ParameterName = "CUTOFF", ParameterValue = 120 };
             Rev4PatchParameters.Add(73, Cutoff);
             Brightness = new ContinuousController { MaximumValue = 127, MinimumValue = 0, Number = 74, ParameterName = "BRIGHTNESS", ParameterValue = 127 };
             Rev4PatchParameters.Add(74, Brightness);
