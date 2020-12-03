@@ -53,239 +53,239 @@ namespace ProphetRev4PatchManager
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorAFrequency { get; set; }
+        public ContinuousController OscilatorAFrequency { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController MasterVolume { get; set; }
+        public ContinuousController MasterVolume { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBFrequency { get; set; }
+        public ContinuousController OscilatorBFrequency { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBFineTune { get; set; }
+        public ContinuousController OscilatorBFineTune { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorASawOnOff { get; set; }
+        public ContinuousController OscilatorASawOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorASquareOnOff { get; set; }
+        public ContinuousController OscilatorASquareOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorAPulseWidth { get; set; }
+        public ContinuousController OscilatorAPulseWidth { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBPulseWidth { get; set; }
+        public ContinuousController OscilatorBPulseWidth { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorSyncOnOff { get; set; }
+        public ContinuousController OscilatorSyncOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBLowFreqOnOff { get; set; }
+        public ContinuousController OscilatorBLowFreqOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBKeyboardOnOff { get; set; }
+        public ContinuousController OscilatorBKeyboardOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController GlideRate { get; set; }
+        public ContinuousController GlideRate { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorALevel { get; set; }
+        public ContinuousController OscilatorALevel { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBLevel { get; set; }
+        public ContinuousController OscilatorBLevel { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController NoiseLevel { get; set; }
+        public ContinuousController NoiseLevel { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBSawOnOff { get; set; }
+        public ContinuousController OscilatorBSawOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController Resonance { get; set; }
+        public ContinuousController Resonance { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController FilterKeyboardTrackOffHalfFull { get; set; }
+        public ContinuousController FilterKeyboardTrackOffHalfFull { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController FilterRevSelect { get; set; }
+        public ContinuousController FilterRevSelect { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOFrequency { get; set; }
+        public ContinuousController LFOFrequency { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOInitialAmount { get; set; }
+        public ContinuousController LFOInitialAmount { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBTriOnOff { get; set; }
+        public ContinuousController OscilatorBTriOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOSourceMix { get; set; }
+        public ContinuousController LFOSourceMix { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOFreqAOnOff { get; set; }
+        public ContinuousController LFOFreqAOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOFreqBOnOff { get; set; }
+        public ContinuousController LFOFreqBOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOFreqPWAOnOff { get; set; }
+        public ContinuousController LFOFreqPWAOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOFreqPWBOnOff { get; set; }
+        public ContinuousController LFOFreqPWBOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOFilterOnOff { get; set; }
+        public ContinuousController LFOFilterOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PolyModFiltEnvAmount { get; set; }
+        public ContinuousController PolyModFiltEnvAmount { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PolyModOscBAmount { get; set; }
+        public ContinuousController PolyModOscBAmount { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PolyModFreqAOnOff { get; set; }
+        public ContinuousController PolyModFreqAOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PolyModPWOnOff { get; set; }
+        public ContinuousController PolyModPWOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PolyModFilterOnOff { get; set; }
+        public ContinuousController PolyModFilterOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PitchWheelRange { get; set; }
+        public ContinuousController PitchWheelRange { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController RetriggerAndUnisonAssign { get; set; }
+        public ContinuousController RetriggerAndUnisonAssign { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController Cutoff { get; set; }
+        public ContinuousController Cutoff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController Brightness { get; set; }
+        public ContinuousController Brightness { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController Vintage { get; set; }
+        public ContinuousController Vintage { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PressureFilter { get; set; }
+        public ContinuousController PressureFilter { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController PressureLFO { get; set; }
+        public ContinuousController PressureLFO { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController EnvelopeFilterAmount { get; set; }
+        public ContinuousController EnvelopeFilterAmount { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController EnvelopeFilterVelocityOnOff { get; set; }
+        public ContinuousController EnvelopeFilterVelocityOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController EnvelopeVCAVelocityOnOff { get; set; }
+        public ContinuousController EnvelopeVCAVelocityOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController AttackFilter { get; set; }
+        public ContinuousController AttackFilter { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController AttackVCA { get; set; }
+        public ContinuousController AttackVCA { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController DecayFilter { get; set; }
+        public ContinuousController DecayFilter { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController DecayVCA { get; set; }
+        public ContinuousController DecayVCA { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController SustainFilter { get; set; }
+        public ContinuousController SustainFilter { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController SustainVCA { get; set; }
+        public ContinuousController SustainVCA { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController ReleaseFilter { get; set; }
+        public ContinuousController ReleaseFilter { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController ReleaseVCA { get; set; }
+        public ContinuousController ReleaseVCA { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController ReleaseOnOff { get; set; }
+        public ContinuousController ReleaseOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController UnisonOnOff { get; set; }
+        public ContinuousController UnisonOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController UnisonVoiceCount { get; set; }
+        public ContinuousController UnisonVoiceCount { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController UnisonDetune { get; set; }
+        public ContinuousController UnisonDetune { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController OscilatorBSquareOnOff { get; set; }
+        public ContinuousController OscilatorBSquareOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOSawOnOff { get; set; }
+        public ContinuousController LFOSawOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOTriOnOff { get; set; }
+        public ContinuousController LFOTriOnOff { get; private set; }
         /// <summary>
         /// 
         /// </summary>
-        public ContinuousController LFOSquareOnOff { get; set; }
+        public ContinuousController LFOSquareOnOff { get; private set; }
         #endregion
 
         /// <summary>
