@@ -23,9 +23,19 @@ namespace ProphetRev4PatchManager
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+            
             // Do any additional setup after loading the view.
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override void ViewWillAppear()
+        {
+            base.ViewWillAppear();
+            this.View.Window.Title = "Prophet Rev 4 Editor (Default Patch)";
+        }
+
         /// <summary>
         /// The view?
         /// </summary>
