@@ -6,7 +6,7 @@
 //
 using Foundation;
 
-namespace ProphetRev4sSysexHelper
+namespace ProphetRev4PatchManager
 {
     [Register("ViewController")]
     partial class ViewController

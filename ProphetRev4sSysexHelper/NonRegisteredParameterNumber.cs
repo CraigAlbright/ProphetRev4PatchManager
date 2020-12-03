@@ -1,6 +1,9 @@
 ﻿
-namespace ProphetRev4sSysexHelper
+namespace ProphetRev4PatchManager
 {
+    /// <summary>
+    /// Stuct for NRPNs 
+    /// </summary>
     public struct NonRegisteredParameterNumber
     {
         // format is   NRPN #  MidiCh   Second    Third
@@ -16,7 +19,9 @@ namespace ProphetRev4sSysexHelper
         private int _maxValue;
         private NrpnType _nrpnType;
 
-        
+        /// <summary>
+        /// 
+        /// </summary>
         public int Number
         {
             get
@@ -46,7 +51,10 @@ namespace ProphetRev4sSysexHelper
          13 1101 D
          14 1110 E
          15 1111 F
-        */ 
+        */
+        /// <summary>
+        /// 
+        /// </summary>
         public int ChannelNumber
         {
             get
@@ -69,6 +77,9 @@ namespace ProphetRev4sSysexHelper
         //1100 - Program Change
         //1101 - Channel Pressure
         //1110 - Pitch Bend
+        /// <summary>
+        /// 
+        /// </summary>
         public int Status
         {
             get
@@ -81,7 +92,10 @@ namespace ProphetRev4sSysexHelper
             }
 
         }
-        //Second Value
+        //Second Value usually the MSB or 0
+        /// <summary>
+        /// 
+        /// </summary>
         public int Second
         {
             get
@@ -104,7 +118,10 @@ namespace ProphetRev4sSysexHelper
                 _second = value;
             }
         }
-        //Third Value
+        /// <summary>
+        /// 
+        /// </summary>
+        //Third Value- usually the actual control value but could be LSB
         public int Third
         {
             get
@@ -128,6 +145,9 @@ namespace ProphetRev4sSysexHelper
             }
         }
         //Nrpn description
+        /// <summary>
+        /// 
+        /// </summary>
         public string Description
         {
             get
@@ -140,6 +160,9 @@ namespace ProphetRev4sSysexHelper
             }
         }
         //Nrpn Name
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name
         {
             get
@@ -151,6 +174,9 @@ namespace ProphetRev4sSysexHelper
                 _name = value;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         //Used to clamp values
         public int MinimumValue
         {
@@ -164,6 +190,9 @@ namespace ProphetRev4sSysexHelper
             }
         }
         //Used to clamp values
+        /// <summary>
+        /// 
+        /// </summary>
         public int MaximumValue
         {
             get
@@ -176,6 +205,9 @@ namespace ProphetRev4sSysexHelper
             }
         }
         //NrpnType Type- received message, cc message or sysex mesage
+        /// <summary>
+        /// 
+        /// </summary>
         public NrpnType NrpnType
         {
             get
@@ -188,12 +220,26 @@ namespace ProphetRev4sSysexHelper
             }
         }
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
     public enum NrpnType
     {
+        /// <summary>
+        /// 
+        /// </summary>
         Midi = 0,
+        /// <summary>
+        /// 
+        /// </summary>
         Received = 1,
+        /// <summary>
+        /// 
+        /// </summary>
         Control = 2,
+        /// <summary>
+        /// 
+        /// </summary>
         SysEx = 3
     }
 }

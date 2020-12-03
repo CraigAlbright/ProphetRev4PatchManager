@@ -1,6 +1,6 @@
 ﻿using AppKit;
 
-namespace ProphetRev4sSysexHelper
+namespace ProphetRev4PatchManager
 {
     static class MainClass
     {

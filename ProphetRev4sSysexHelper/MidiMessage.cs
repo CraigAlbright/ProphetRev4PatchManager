@@ -1,6 +1,9 @@
 ﻿
-namespace ProphetRev4sSysexHelper
+namespace ProphetRev4PatchManager
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class MidiMessage
     {
 
@@ -9,6 +12,9 @@ namespace ProphetRev4sSysexHelper
         private int _noteNumber;
         private int _value;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int MidiMessageNumber
         {
             get
@@ -20,7 +26,10 @@ namespace ProphetRev4sSysexHelper
                 _midiMessageNumber = value;
             }
         }
-        //not sure how to represent all just yet, but 0-15 binary for channels 1-16
+
+        /// <summary>
+        /// not sure how to represent all just yet, but 0-15 binary for channels 1-16
+        /// </summary>
         public int MidiChannelNumber
         {
             get
@@ -33,6 +42,9 @@ namespace ProphetRev4sSysexHelper
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int NoteNumber
         {
             get
@@ -45,6 +57,9 @@ namespace ProphetRev4sSysexHelper
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int NoteValue
         {
             get
@@ -57,6 +72,13 @@ namespace ProphetRev4sSysexHelper
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="messageNumber"></param>
+        /// <param name="channelNumber"></param>
+        /// <param name="noteNumber"></param>
+        /// <param name="noteValue"></param>
         public MidiMessage(int messageNumber, int channelNumber, int noteNumber, int noteValue)
         {
             _midiMessageNumber = messageNumber;
@@ -65,6 +87,12 @@ namespace ProphetRev4sSysexHelper
             _value = noteValue;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="channelNumber"></param>
+        /// <param name="noteNumber"></param>
+        /// <returns></returns>
         public static MidiMessage NoteOff(int channelNumber, int noteNumber)
         {
             var midiMessageNumber = 0b1000;

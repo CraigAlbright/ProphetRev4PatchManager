@@ -1,23 +1,40 @@
 ﻿using System.Collections.Generic;
 
-namespace ProphetRev4sSysexHelper
+namespace ProphetRev4PatchManager
 {
+    /// <summary>
+    /// Abstraction of a patch for the Rev4 prophet. Basically a container
+    /// of all CC values for the controls
+    /// </summary>
     public class ProphetRev4Patch
     {
-
+        /// <summary>
+        /// Lookup dictionary for CCs while each exists as a property, thinking
+        /// that in the future will possibly remove the properties and only
+        /// use this collection. But since Im still sketching this out, leaving
+        /// in for now until I know how it will work.
+        /// </summary>
         public Dictionary<int, ContinuousController> Rev4PatchParameters { get; private set; }
+
+        /// <summary>
+        /// Default Constructor creates a default patch
+        /// </summary>
         public ProphetRev4Patch()
         {
             Rev4PatchParameters = new Dictionary<int,ContinuousController>();
             CreateDefaultPatch();
         }
 
+        /// <summary>
+        /// If you want to create a patch by passing in some or all parameters
+        ///initialize the same way as the default constructor, but set the values
+        ///usung the CCs passed into the constructor. This will allow
+        ///creation of a patch using only the parameters you care about and
+        ///doesnt require every parameter to be part of the collection.
+        /// </summary>
+        /// <param name="parameters"></param>
         public ProphetRev4Patch(IEnumerable<ContinuousController> parameters)
-        {
-            //initialize the same way as the default constructor, but set the values
-            //usung the CCs passed into the constructor. This will allow
-            //creation of a patch using only the parameters you care about and
-            //doesnt require every parameter to be part of the collection.
+        {           
             Rev4PatchParameters = new Dictionary<int, ContinuousController>();
             CreateDefaultPatch();
 
@@ -33,70 +50,248 @@ namespace ProphetRev4sSysexHelper
 
         #region CC properties
         //Create place for all the CCs to reside
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorAFrequency { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController MasterVolume { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBFrequency { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBFineTune { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorASawOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorASquareOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorAPulseWidth { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBPulseWidth { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorSyncOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBLowFreqOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBKeyboardOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController GlideRate { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorALevel { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBLevel { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController NoiseLevel { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBSawOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController Resonance { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController FilterKeyboardTrackOffHalfFull { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController FilterRevSelect { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOFrequency { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOInitialAmount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBTriOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOSourceMix { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOFreqAOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOFreqBOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOFreqPWAOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOFreqPWBOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOFilterOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PolyModFiltEnvAmount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PolyModOscBAmount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PolyModFreqAOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PolyModPWOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PolyModFilterOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PitchWheelRange { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController RetriggerAndUnisonAssign { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController Cutoff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController Brightness { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController Vintage { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PressureFilter { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController PressureLFO { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController EnvelopeFilterAmount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController EnvelopeFilterVelocityOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController EnvelopeVCAVelocityOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController AttackFilter { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController AttackVCA { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController DecayFilter { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController DecayVCA { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController SustainFilter { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController SustainVCA { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController ReleaseFilter { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController ReleaseVCA { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController ReleaseOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController UnisonOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController UnisonVoiceCount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController UnisonDetune { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController OscilatorBSquareOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOSawOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOTriOnOff { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public ContinuousController LFOSquareOnOff { get; set; }
         #endregion
 
-
-        //initializes a default patch of CC messages. Used when class is initialized or method is called from Editor
-        //Also want this in a Dictionary for quick access by CC#
+        /// <summary>
+        /// initializes a default patch of CC messages. Used when class is initialized or method is called from Editor
+        /// Also want this in a Dictionary for quick access by CC#
+        /// </summary>
         public void CreateDefaultPatch()
         {
             // Set up a Default patch with Saw wave on OSC A
